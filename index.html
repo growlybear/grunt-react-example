@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-    <!--
-    <link rel="stylesheet" href="css/normalize.css">
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-    -->
+
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -22,7 +24,9 @@
       </p>
     <![endif]-->
 
-    <div id="root" class="container">If you can see this message, the app has failed to initialise</div>
+    <div class="container">
+      <p id="root">If you can see this message, the app has failed to initialise</p>
+    </div>
 
     <script src="js/dist/bundle.js"></script>
   </body>
