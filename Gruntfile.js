@@ -2,6 +2,8 @@ module.exports = function (grunt) {
 
     // configure
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+
         jshint: {
             client: [
                 'Gruntfile.js'
@@ -16,13 +18,21 @@ module.exports = function (grunt) {
                 src: ['react_components/**/*.jsx'],
                 dest: 'scripts/app.built.js'
             }
+        },
+
+        watch: {
+            react: {
+                files: 'react_components/*.jsx',
+                tasks: ['browserify']
+            }
         }
     });
 
     // load
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browserify');
 
     // register
-    grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('default', ['jshint', 'browserify']);
 };
