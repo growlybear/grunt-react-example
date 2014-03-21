@@ -9,5 +9,5 @@ React.renderComponent(
         bio="My name is Simon. I make websites"
         avatar="http://simonsmith.io/assets/images/me.jpg"
     />,
-    document.body
+    document.getElementById('root')
 );
