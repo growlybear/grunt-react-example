@@ -10,8 +10,8 @@ module.exports = React.createClass({
             <div className="Profile">
                 <h2 className="Profile-title">{ this.props.username }</h2>
                 <div className="Profile-body">
-                    <Avatar imgSrc="{ this.props.avatar }" />
-                    <Bio text="{ this.props.bio }" />
+                    <Avatar imgSrc={ this.props.avatar } />
+                    <Bio text={ this.props.bio } />
                 </div>
             </div>
         );
