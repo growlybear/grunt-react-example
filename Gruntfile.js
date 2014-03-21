@@ -16,7 +16,7 @@ module.exports = function (grunt) {
             },
             client: {
                 src: ['react_components/**/*.jsx'],
-                dest: 'scripts/app.built.js'
+                dest: 'js/dist/bundle.js'
             }
         },
 

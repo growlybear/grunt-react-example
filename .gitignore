@@ -1,4 +1,4 @@
 .DS_Store
-scripts/app.built.js
+js/dist
 
 node_modules
