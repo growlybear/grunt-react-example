@@ -14,5 +14,8 @@
     "app/components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "modernizr": "~2.7.2"
+  }
 }
